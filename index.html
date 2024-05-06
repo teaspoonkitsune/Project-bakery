@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,39 +8,38 @@
   <body>
     <header>
       <nav>
-        <a href="#"><img src="./icons/logo.svg" alt="логотип" /></a>
+        <a href="./index.html"><img src="./icons/logo.svg" alt="логотип" /></a>
         <ul>
-          <li><a href="#">Нові традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#traditions-section">Нові традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
 
           <button type="button">Замовити дзвінок</button>
         </ul>
       </nav>
+      <h1>Сучасна пекарня</h1>
       <ul>
-        <h1>Сучасна пекарня</h1>
         <li>Великий попит на ринку</li>
         <li>Доступні за бюджетом формати</li>
         <li>Досвідчена управлінська команда</li>
       </ul>
     </header>
     <main>
-      <section1>
+      <section1 id="traditions-section">
         <h2>Новий формат традицій</h2>
         <img src="./images/bakerMan.jpg" alt="Пекар" />
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
         </p>
-        <p></p>
         <p>
           Ми працюємо як найвідоміші мережі—
           <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
           стильний дизайн та висока якість обслуговування!
         </p>
       </section1>
-      <section2>
+      <section2 id="chefs-section">
         <h2>Наші найкращі <span>шеф-кухарі</span></h2>
         <ul>
           <li>
@@ -49,6 +48,7 @@
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
               <p>Я випічу для вас найсмачніщі вироби!</p>
+              <img src="./images/bakerNastya.jpg" alt="Кухарка Настя" />
             </article1>
           </li>
           <li>
@@ -60,11 +60,12 @@
                 з якою ми ділимось кожен раз з Вами через нашу випічку!
               </p>
               <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              <img src="./images/bakerVlad.jpg" alt="Кухар Влад" />
             </article2>
           </li>
         </ul>
       </section2>
-      <section3>
+      <section3 id="formats-section">
         <h2>Формати</h2>
         <ul>
           <li>
@@ -99,18 +100,34 @@
           </li>
         </ul>
       </section3>
-      <section4>
-        <!-- map -->
+      <section4 id="contacts-section">
+        <h2>Приєднуйтесь до мережі пекарень</h2>
+        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <!-- Три заповнення Імя Телефон Пошта -->
+
+        <button type="submit">Замовити дзвінок</button>
+        <p>
+          Натискаючи на кнопку я погоджуюсь з
+          <a href="#">політикою конфіденційності</a>
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2scz!4v1715004109477!5m2!1suk!2scz"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section4>
     </main>
     <footer>
       <nav>
-        <a href="#"><img src="./icons/logo.svg" alt="логотип" /></a>
+        <a href="./index.html"><img src="./icons/logo.svg" alt="логотип" /></a>
         <ul>
           <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -124,11 +141,12 @@
               >Україна, м. Київ, вул. Січових Стрільців 54
             </a>
           </li>
-          <li></li>
+          <!-- <li>facebook</li> -->
+          <!-- <li>instagram</li> -->
         </ul>
         <a href="" target="_blank">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
       </address>
+      <p>&copy; 2024 Дані захищені</p>
     </footer>
   </body>
 </html>
